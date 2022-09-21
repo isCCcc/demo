@@ -1,0 +1,52 @@
+#heart {
+    margin: 150px;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    transition: all .5s;
+    animation: heart 0.5s infinite alternate;
+}
+
+/* 写法一：使用transform */
+#heart:hover {
+    transform: scale(1.2);
+}
+
+/* 写法二：使用animation */
+@keyframes heart {
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+#heart #left {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 100%;
+    right: 100%;
+    transform: rotate(45deg) translateX(83px);
+    background-color: red;
+    border-radius: 50% 0 0 50%;
+}
+
+#heart #right {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    transform: rotate(45deg) translateY(83px);
+    background-color: red;
+    border-radius: 50% 50% 0 0;
+
+}
+
+#heart #rect {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: rotate(45deg);
+    background-color: red;
+
+}

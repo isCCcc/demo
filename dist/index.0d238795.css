@@ -1,0 +1,50 @@
+#heart {
+  height: 100px;
+  width: 100px;
+  margin: 150px;
+  transition: all .5s;
+  animation: heart .5s infinite alternate;
+  position: relative;
+}
+
+#heart:hover {
+  transform: scale(1.2);
+}
+
+@keyframes heart {
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+#heart #left {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  bottom: 100%;
+  right: 100%;
+  transform: rotate(45deg)translateX(83px);
+}
+
+#heart #right {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+  transform: rotate(45deg)translateY(83px);
+}
+
+#heart #rect {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+/*# sourceMappingURL=index.0d238795.css.map */
